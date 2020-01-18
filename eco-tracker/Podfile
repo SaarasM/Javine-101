@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.2'
+
+target 'eco-tracker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for eco-tracker
+
+  target 'eco-trackerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'eco-trackerUITests' do
+    # Pods for testing
+  end
+
+end

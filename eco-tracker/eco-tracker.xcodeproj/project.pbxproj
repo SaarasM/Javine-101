@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EB37B6844BEC9D8018949FE /* Pods_eco_tracker_eco_trackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89B9E0808AC4CFF80227D63E /* Pods_eco_tracker_eco_trackerUITests.framework */; };
+		54B327271A350E6F1895DA5C /* Pods_eco_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5292A34A24A87A289CAFB75 /* Pods_eco_trackerTests.framework */; };
+		617D322A23D3297600640DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322923D3297600640DA8 /* AppDelegate.swift */; };
+		617D322C23D3297600640DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322B23D3297600640DA8 /* SceneDelegate.swift */; };
+		617D322E23D3297600640DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322D23D3297600640DA8 /* ViewController.swift */; };
+		617D323123D3297600640DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D322F23D3297600640DA8 /* Main.storyboard */; };
+		617D323323D3297A00640DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617D323223D3297A00640DA8 /* Assets.xcassets */; };
+		617D323623D3297A00640DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D323423D3297A00640DA8 /* LaunchScreen.storyboard */; };
+		617D324123D3297A00640DA8 /* eco_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D324023D3297A00640DA8 /* eco_trackerTests.swift */; };
+		617D324C23D3297B00640DA8 /* eco_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D324B23D3297B00640DA8 /* eco_trackerUITests.swift */; };
+		B7BF30469445946F00F962E4 /* Pods_eco_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		617D323D23D3297A00640DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617D321E23D3297600640DA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 617D322523D3297600640DA8;
+			remoteInfo = "eco-tracker";
+		};
+		617D324823D3297B00640DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617D321E23D3297600640DA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 617D322523D3297600640DA8;
+			remoteInfo = "eco-tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E9BE9F0ED5AF456E320D1D8 /* Pods-eco-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-tracker.debug.xcconfig"; path = "Target Support Files/Pods-eco-tracker/Pods-eco-tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		3234D14D89CA2D01E501F024 /* Pods-eco-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-tracker.release.xcconfig"; path = "Target Support Files/Pods-eco-tracker/Pods-eco-tracker.release.xcconfig"; sourceTree = "<group>"; };
+		4862178FB911B008004E96FE /* Pods-eco-tracker-eco-trackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-tracker-eco-trackerUITests.release.xcconfig"; path = "Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		617D322623D3297600640DA8 /* eco-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		617D322923D3297600640DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		617D322B23D3297600640DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		617D322D23D3297600640DA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		617D323023D3297600640DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		617D323223D3297A00640DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		617D323523D3297A00640DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		617D323723D3297A00640DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617D323C23D3297A00640DA8 /* eco-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		617D324023D3297A00640DA8 /* eco_trackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_trackerTests.swift; sourceTree = "<group>"; };
+		617D324223D3297A00640DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617D324723D3297B00640DA8 /* eco-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		617D324B23D3297B00640DA8 /* eco_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_trackerUITests.swift; sourceTree = "<group>"; };
+		617D324D23D3297B00640DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B9E0808AC4CFF80227D63E /* Pods_eco_tracker_eco_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker_eco_trackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-trackerTests.release.xcconfig"; path = "Target Support Files/Pods-eco-trackerTests/Pods-eco-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8FC08BA6D66C3B3260E59A1D /* Pods-eco-trackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-trackerTests.debug.xcconfig"; path = "Target Support Files/Pods-eco-trackerTests/Pods-eco-trackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		905C5EF67705C859B4DC60C6 /* Pods-eco-tracker-eco-trackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-tracker-eco-trackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5292A34A24A87A289CAFB75 /* Pods_eco_trackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_trackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		617D322323D3297600640DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BF30469445946F00F962E4 /* Pods_eco_tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D323923D3297A00640DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B327271A350E6F1895DA5C /* Pods_eco_trackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D324423D3297B00640DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB37B6844BEC9D8018949FE /* Pods_eco_tracker_eco_trackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CB20367809B0B8BD37A25A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E9BE9F0ED5AF456E320D1D8 /* Pods-eco-tracker.debug.xcconfig */,
+				3234D14D89CA2D01E501F024 /* Pods-eco-tracker.release.xcconfig */,
+				905C5EF67705C859B4DC60C6 /* Pods-eco-tracker-eco-trackerUITests.debug.xcconfig */,
+				4862178FB911B008004E96FE /* Pods-eco-tracker-eco-trackerUITests.release.xcconfig */,
+				8FC08BA6D66C3B3260E59A1D /* Pods-eco-trackerTests.debug.xcconfig */,
+				8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		617D321D23D3297600640DA8 = {
+			isa = PBXGroup;
+			children = (
+				617D322823D3297600640DA8 /* eco-tracker */,
+				617D323F23D3297A00640DA8 /* eco-trackerTests */,
+				617D324A23D3297B00640DA8 /* eco-trackerUITests */,
+				617D322723D3297600640DA8 /* Products */,
+				4CB20367809B0B8BD37A25A2 /* Pods */,
+				6195CE664DB1EF713709CF38 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		617D322723D3297600640DA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				617D322623D3297600640DA8 /* eco-tracker.app */,
+				617D323C23D3297A00640DA8 /* eco-trackerTests.xctest */,
+				617D324723D3297B00640DA8 /* eco-trackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		617D322823D3297600640DA8 /* eco-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				617D322923D3297600640DA8 /* AppDelegate.swift */,
+				617D322B23D3297600640DA8 /* SceneDelegate.swift */,
+				617D322D23D3297600640DA8 /* ViewController.swift */,
+				617D322F23D3297600640DA8 /* Main.storyboard */,
+				617D323223D3297A00640DA8 /* Assets.xcassets */,
+				617D323423D3297A00640DA8 /* LaunchScreen.storyboard */,
+				617D323723D3297A00640DA8 /* Info.plist */,
+			);
+			path = "eco-tracker";
+			sourceTree = "<group>";
+		};
+		617D323F23D3297A00640DA8 /* eco-trackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				617D324023D3297A00640DA8 /* eco_trackerTests.swift */,
+				617D324223D3297A00640DA8 /* Info.plist */,
+			);
+			path = "eco-trackerTests";
+			sourceTree = "<group>";
+		};
+		617D324A23D3297B00640DA8 /* eco-trackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				617D324B23D3297B00640DA8 /* eco_trackerUITests.swift */,
+				617D324D23D3297B00640DA8 /* Info.plist */,
+			);
+			path = "eco-trackerUITests";
+			sourceTree = "<group>";
+		};
+		6195CE664DB1EF713709CF38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */,
+				89B9E0808AC4CFF80227D63E /* Pods_eco_tracker_eco_trackerUITests.framework */,
+				F5292A34A24A87A289CAFB75 /* Pods_eco_trackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		617D322523D3297600640DA8 /* eco-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617D325023D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-tracker" */;
+			buildPhases = (
+				7BA07F8D7DDB798B43C37E3C /* [CP] Check Pods Manifest.lock */,
+				617D322223D3297600640DA8 /* Sources */,
+				617D322323D3297600640DA8 /* Frameworks */,
+				617D322423D3297600640DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eco-tracker";
+			productName = "eco-tracker";
+			productReference = 617D322623D3297600640DA8 /* eco-tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		617D323B23D3297A00640DA8 /* eco-trackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617D325323D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-trackerTests" */;
+			buildPhases = (
+				2A7C39D99FA210A1CBDD3C24 /* [CP] Check Pods Manifest.lock */,
+				617D323823D3297A00640DA8 /* Sources */,
+				617D323923D3297A00640DA8 /* Frameworks */,
+				617D323A23D3297A00640DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				617D323E23D3297A00640DA8 /* PBXTargetDependency */,
+			);
+			name = "eco-trackerTests";
+			productName = "eco-trackerTests";
+			productReference = 617D323C23D3297A00640DA8 /* eco-trackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		617D324623D3297B00640DA8 /* eco-trackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617D325623D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-trackerUITests" */;
+			buildPhases = (
+				BDBA568EBC8AE3F0022E7D22 /* [CP] Check Pods Manifest.lock */,
+				617D324323D3297B00640DA8 /* Sources */,
+				617D324423D3297B00640DA8 /* Frameworks */,
+				617D324523D3297B00640DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				617D324923D3297B00640DA8 /* PBXTargetDependency */,
+			);
+			name = "eco-trackerUITests";
+			productName = "eco-trackerUITests";
+			productReference = 617D324723D3297B00640DA8 /* eco-trackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		617D321E23D3297600640DA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Benjamin Searle";
+				TargetAttributes = {
+					617D322523D3297600640DA8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					617D323B23D3297A00640DA8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 617D322523D3297600640DA8;
+					};
+					617D324623D3297B00640DA8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 617D322523D3297600640DA8;
+					};
+				};
+			};
+			buildConfigurationList = 617D322123D3297600640DA8 /* Build configuration list for PBXProject "eco-tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 617D321D23D3297600640DA8;
+			productRefGroup = 617D322723D3297600640DA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				617D322523D3297600640DA8 /* eco-tracker */,
+				617D323B23D3297A00640DA8 /* eco-trackerTests */,
+				617D324623D3297B00640DA8 /* eco-trackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		617D322423D3297600640DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617D323623D3297A00640DA8 /* LaunchScreen.storyboard in Resources */,
+				617D323323D3297A00640DA8 /* Assets.xcassets in Resources */,
+				617D323123D3297600640DA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D323A23D3297A00640DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D324523D3297B00640DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A7C39D99FA210A1CBDD3C24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eco-trackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BA07F8D7DDB798B43C37E3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eco-tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBA568EBC8AE3F0022E7D22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eco-tracker-eco-trackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		617D322223D3297600640DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617D322E23D3297600640DA8 /* ViewController.swift in Sources */,
+				617D322A23D3297600640DA8 /* AppDelegate.swift in Sources */,
+				617D322C23D3297600640DA8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D323823D3297A00640DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617D324123D3297A00640DA8 /* eco_trackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		617D324323D3297B00640DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617D324C23D3297B00640DA8 /* eco_trackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		617D323E23D3297A00640DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 617D322523D3297600640DA8 /* eco-tracker */;
+			targetProxy = 617D323D23D3297A00640DA8 /* PBXContainerItemProxy */;
+		};
+		617D324923D3297B00640DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 617D322523D3297600640DA8 /* eco-tracker */;
+			targetProxy = 617D324823D3297B00640DA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		617D322F23D3297600640DA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617D323023D3297600640DA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		617D323423D3297A00640DA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				617D323523D3297A00640DA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		617D324E23D3297B00640DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		617D324F23D3297B00640DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		617D325123D3297B00640DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E9BE9F0ED5AF456E320D1D8 /* Pods-eco-tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XSCS5YZKP;
+				INFOPLIST_FILE = "eco-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		617D325223D3297B00640DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3234D14D89CA2D01E501F024 /* Pods-eco-tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5XSCS5YZKP;
+				INFOPLIST_FILE = "eco-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		617D325423D3297B00640DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC08BA6D66C3B3260E59A1D /* Pods-eco-trackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eco-trackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-trackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eco-tracker.app/eco-tracker";
+			};
+			name = Debug;
+		};
+		617D325523D3297B00640DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eco-trackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-trackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eco-tracker.app/eco-tracker";
+			};
+			name = Release;
+		};
+		617D325723D3297B00640DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905C5EF67705C859B4DC60C6 /* Pods-eco-tracker-eco-trackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eco-trackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-trackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eco-tracker";
+			};
+			name = Debug;
+		};
+		617D325823D3297B00640DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4862178FB911B008004E96FE /* Pods-eco-tracker-eco-trackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "eco-trackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "javine.eco-trackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "eco-tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		617D322123D3297600640DA8 /* Build configuration list for PBXProject "eco-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617D324E23D3297B00640DA8 /* Debug */,
+				617D324F23D3297B00640DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617D325023D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617D325123D3297B00640DA8 /* Debug */,
+				617D325223D3297B00640DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617D325323D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-trackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617D325423D3297B00640DA8 /* Debug */,
+				617D325523D3297B00640DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617D325623D3297B00640DA8 /* Build configuration list for PBXNativeTarget "eco-trackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617D325723D3297B00640DA8 /* Debug */,
+				617D325823D3297B00640DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 617D321E23D3297600640DA8 /* Project object */;
+}

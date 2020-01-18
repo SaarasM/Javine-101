@@ -11,12 +11,25 @@
 		54B327271A350E6F1895DA5C /* Pods_eco_trackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5292A34A24A87A289CAFB75 /* Pods_eco_trackerTests.framework */; };
 		617D322A23D3297600640DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322923D3297600640DA8 /* AppDelegate.swift */; };
 		617D322C23D3297600640DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322B23D3297600640DA8 /* SceneDelegate.swift */; };
-		617D322E23D3297600640DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322D23D3297600640DA8 /* ViewController.swift */; };
+		617D322E23D3297600640DA8 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D322D23D3297600640DA8 /* TestViewController.swift */; };
 		617D323123D3297600640DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D322F23D3297600640DA8 /* Main.storyboard */; };
 		617D323323D3297A00640DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 617D323223D3297A00640DA8 /* Assets.xcassets */; };
 		617D323623D3297A00640DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617D323423D3297A00640DA8 /* LaunchScreen.storyboard */; };
 		617D324123D3297A00640DA8 /* eco_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D324023D3297A00640DA8 /* eco_trackerTests.swift */; };
 		617D324C23D3297B00640DA8 /* eco_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D324B23D3297B00640DA8 /* eco_trackerUITests.swift */; };
+		617D326323D3653000640DA8 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D325F23D3653000640DA8 /* MessageViewController.swift */; };
+		617D326423D3653000640DA8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326023D3653000640DA8 /* CameraViewController.swift */; };
+		617D326523D3653000640DA8 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326123D3653000640DA8 /* HeaderViewController.swift */; };
+		617D326623D3653000640DA8 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326223D3653000640DA8 /* BarcodeScannerViewController.swift */; };
+		617D326A23D3654600640DA8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326723D3654600640DA8 /* State.swift */; };
+		617D326B23D3654600640DA8 /* FocusViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326823D3654600640DA8 /* FocusViewType.swift */; };
+		617D326C23D3654600640DA8 /* TorchMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326923D3654600640DA8 /* TorchMode.swift */; };
+		617D327123D3655B00640DA8 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326D23D3655A00640DA8 /* UIView+Extensions.swift */; };
+		617D327223D3655B00640DA8 /* AVMetadataObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326E23D3655A00640DA8 /* AVMetadataObject+Extensions.swift */; };
+		617D327323D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D326F23D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift */; };
+		617D327423D3655B00640DA8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327023D3655B00640DA8 /* UIViewController+Extensions.swift */; };
+		617D327923D3659B00640DA8 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327723D3659B00640DA8 /* Functions.swift */; };
+		617D327A23D3659B00640DA8 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327823D3659B00640DA8 /* VideoPermissionService.swift */; };
 		B7BF30469445946F00F962E4 /* Pods_eco_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +57,7 @@
 		617D322623D3297600640DA8 /* eco-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		617D322923D3297600640DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		617D322B23D3297600640DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		617D322D23D3297600640DA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		617D322D23D3297600640DA8 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		617D323023D3297600640DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		617D323223D3297A00640DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		617D323523D3297A00640DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +68,19 @@
 		617D324723D3297B00640DA8 /* eco-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		617D324B23D3297B00640DA8 /* eco_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_trackerUITests.swift; sourceTree = "<group>"; };
 		617D324D23D3297B00640DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		617D325F23D3653000640DA8 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		617D326023D3653000640DA8 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		617D326123D3653000640DA8 /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		617D326223D3653000640DA8 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		617D326723D3654600640DA8 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		617D326823D3654600640DA8 /* FocusViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusViewType.swift; sourceTree = "<group>"; };
+		617D326923D3654600640DA8 /* TorchMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorchMode.swift; sourceTree = "<group>"; };
+		617D326D23D3655A00640DA8 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		617D326E23D3655A00640DA8 /* AVMetadataObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVMetadataObject+Extensions.swift"; sourceTree = "<group>"; };
+		617D326F23D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		617D327023D3655B00640DA8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		617D327723D3659B00640DA8 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		617D327823D3659B00640DA8 /* VideoPermissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPermissionService.swift; sourceTree = "<group>"; };
 		822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B9E0808AC4CFF80227D63E /* Pods_eco_tracker_eco_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker_eco_trackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-trackerTests.release.xcconfig"; path = "Target Support Files/Pods-eco-trackerTests/Pods-eco-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +127,6 @@
 				8FC08BA6D66C3B3260E59A1D /* Pods-eco-trackerTests.debug.xcconfig */,
 				8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,9 +155,14 @@
 		617D322823D3297600640DA8 /* eco-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				617D325E23D364ED00640DA8 /* Controllers */,
+				617D325D23D364DF00640DA8 /* DataStructures */,
+				617D325C23D364D300640DA8 /* Extensions */,
+				617D325B23D3648A00640DA8 /* Helpers */,
+				617D325923D34B6600640DA8 /* Views */,
 				617D322923D3297600640DA8 /* AppDelegate.swift */,
 				617D322B23D3297600640DA8 /* SceneDelegate.swift */,
-				617D322D23D3297600640DA8 /* ViewController.swift */,
+				617D322D23D3297600640DA8 /* TestViewController.swift */,
 				617D322F23D3297600640DA8 /* Main.storyboard */,
 				617D323223D3297A00640DA8 /* Assets.xcassets */,
 				617D323423D3297A00640DA8 /* LaunchScreen.storyboard */,
@@ -157,6 +187,54 @@
 				617D324D23D3297B00640DA8 /* Info.plist */,
 			);
 			path = "eco-trackerUITests";
+			sourceTree = "<group>";
+		};
+		617D325923D34B6600640DA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		617D325B23D3648A00640DA8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				617D327723D3659B00640DA8 /* Functions.swift */,
+				617D327823D3659B00640DA8 /* VideoPermissionService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		617D325C23D364D300640DA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				617D326E23D3655A00640DA8 /* AVMetadataObject+Extensions.swift */,
+				617D326F23D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift */,
+				617D326D23D3655A00640DA8 /* UIView+Extensions.swift */,
+				617D327023D3655B00640DA8 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		617D325D23D364DF00640DA8 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				617D326823D3654600640DA8 /* FocusViewType.swift */,
+				617D326723D3654600640DA8 /* State.swift */,
+				617D326923D3654600640DA8 /* TorchMode.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		617D325E23D364ED00640DA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				617D326223D3653000640DA8 /* BarcodeScannerViewController.swift */,
+				617D326023D3653000640DA8 /* CameraViewController.swift */,
+				617D326123D3653000640DA8 /* HeaderViewController.swift */,
+				617D325F23D3653000640DA8 /* MessageViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6195CE664DB1EF713709CF38 /* Frameworks */ = {
@@ -372,9 +450,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617D322E23D3297600640DA8 /* ViewController.swift in Sources */,
+				617D322E23D3297600640DA8 /* TestViewController.swift in Sources */,
+				617D326423D3653000640DA8 /* CameraViewController.swift in Sources */,
 				617D322A23D3297600640DA8 /* AppDelegate.swift in Sources */,
+				617D326B23D3654600640DA8 /* FocusViewType.swift in Sources */,
+				617D326323D3653000640DA8 /* MessageViewController.swift in Sources */,
+				617D326C23D3654600640DA8 /* TorchMode.swift in Sources */,
+				617D327223D3655B00640DA8 /* AVMetadataObject+Extensions.swift in Sources */,
 				617D322C23D3297600640DA8 /* SceneDelegate.swift in Sources */,
+				617D327A23D3659B00640DA8 /* VideoPermissionService.swift in Sources */,
+				617D327923D3659B00640DA8 /* Functions.swift in Sources */,
+				617D326523D3653000640DA8 /* HeaderViewController.swift in Sources */,
+				617D326623D3653000640DA8 /* BarcodeScannerViewController.swift in Sources */,
+				617D327423D3655B00640DA8 /* UIViewController+Extensions.swift in Sources */,
+				617D327323D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift in Sources */,
+				617D326A23D3654600640DA8 /* State.swift in Sources */,
+				617D327123D3655B00640DA8 /* UIView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

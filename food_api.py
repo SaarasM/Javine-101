@@ -11,46 +11,37 @@ path = str(os.getcwd())
 ingredients_name_arr = []
 ingredients_arr = []
 
-file = open(path + "/data.csv", "r")
+file = open(path + "/datarev.csv", "r")
 reader = csv.reader(file)
 
 for row in reader:
     ingredients_name_arr.append(row[0])
     ingredients_arr.append(row[1])
 
-ingredients_arr.pop(0)
 ingredients_arr = [int(x) for x in ingredients_arr]
 ingredients_arr = np.array(ingredients_arr)
-print(ingredients_arr)
+# print(ingredients_arr)
 normalized_ingredients_arr = preprocessing.normalize([ingredients_arr])
-print(normalized_ingredients_arr)
+# print(normalized_ingredients_arr)
 
 plastic_co2_per_kg = 6000
 recycled_paper_co2_per_kg = 470
 cardboard_co2_per_kg = 538
-glass_co2_per_kg = 1
+glass_co2_per_kg = 770
+aluminium_co2_per_kg = 8900
 
+packaging_per_kg={"plastic": 0.2136,"paper": 0.0470,"cardboard": 0.0538,"glass": 0.154,"aluminium": 0.45,"": 0}
+packaging_list=["plastic","paper","cardboard","glass","aluminium", ""]
 packaging_arr = np.array(
     [plastic_co2_per_kg, recycled_paper_co2_per_kg, cardboard_co2_per_kg, glass_co2_per_kg])
-print(packaging_arr)
+# print(packaging_arr)
 normalized_packaging_arr = preprocessing.normalize([packaging_arr])
-print(normalized_packaging_arr)
+# print(normalized_packaging_arr)
 
 
-oreo = foodie.get_product("51000009")
-pprint.pprint(oreo)
+# pprint.pprint(oreo)
 # or get by facets
-primary_ingridient = oreo["product"]["ingredients_ids_debug"][0]
-secondary_ingredient = oreo["product"]["ingredients_ids_debug"][1]
-tertiary_ingredient = oreo["product"]["ingredients_ids_debug"][2]
-oreo_ingredients = [primary_ingridient,
-                    secondary_ingredient, tertiary_ingredient]
-print(oreo["product"]["product_name"])
-grade = oreo["product"]["nutrition_grades"]
-packaging = oreo["product"]["packaging"]
-product_score = (primary_ingridient * 5 +
-                 secondary_ingredient * 3 + tertiary_ingredient * 2)
-pprint.pprint(packaging)
+# pprint.pprint(packaging)
 # 0.0 0.2
 # 0.2 0.4
 # 0.4 0.6
@@ -73,12 +64,42 @@ pprint.pprint(packaging)
 # packaging
 
 def GetScore(product):
-    primary_ingredient = product["product"]["ingredients_ids_debug"][0]
-    secondary_ingredient = product["product"]["ingredients_ids_debug"][1]
-    tertiary_ingredient = product["product"]["ingredients_ids_debug"][2]
+    N=len(product["product"]["ingredients_ids_debug"])
+    if (N>0):
+        primary_ingredient = product["product"]["ingredients_ids_debug"][0]
+    else:
+        primary_ingredient=""
+    if(N>1):
+        secondary_ingredient = product["product"]["ingredients_ids_debug"][1]
+    else:
+        secondary_ingredient=""
+    if(N>2):
+        tertiary_ingredient = product["product"]["ingredients_ids_debug"][2]
+    else:
+        tertiary_ingredient=""
 
     primary = bio_lcs.LCS_all(ingredients_name_arr, primary_ingredient)
     secondary = bio_lcs.LCS_all(ingredients_name_arr, secondary_ingredient)
     tertiary = bio_lcs.LCS_all(ingredients_name_arr, tertiary_ingredient)
 
-    ingredients_arr[ingredients_name_arr.index(primary)
+    per_kg_primary=ingredients_arr[ingredients_name_arr.index(primary)]
+    per_kg_secondary=ingredients_arr[ingredients_name_arr.index(secondary)]
+    per_kg_tertiary=ingredients_arr[ingredients_name_arr.index(tertiary)]
+    quantity=product["product"]["quantity"]
+    weight=0
+    for c in quantity:
+        if(not str.isdigit(c)):
+            if(c=='k' or c=='l'):
+                weight=weight*1000
+            if(c=='m'):
+                break
+        else:
+            weight*=10
+            weight+=int(c)
+    print(weight)
+    result=float(0.5)*weight*per_kg_primary+0.3*per_kg_secondary*weight+0.1*per_kg_tertiary*weight
+    result=result/1000
+    packaging=bio_lcs.LCS_all(packaging_list,product["product"]["packaging"])
+    result=result+float(packaging_per_kg[packaging])*weight
+
+    return result

@@ -6,7 +6,7 @@ def LCS_all(dict, word):
         if crt > mx:
             mx = crt
             res = word2
-    return (res, mx)
+    return res
 
 
 def LCS_words(word, word2):

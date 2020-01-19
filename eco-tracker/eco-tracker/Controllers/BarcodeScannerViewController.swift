@@ -1,5 +1,6 @@
 import UIKit
 import AVFoundation
+import Vision
 
 // MARK: - Delegates
 
@@ -22,6 +23,12 @@ public protocol BarcodeScannerDismissalDelegate: class {
   func scannerDidDismiss(_ controller: BarcodeScannerViewController)
 }
 
+/// Delegate to dismiss barcode scanner when the close button has been pressed.
+public protocol BarcodeScannerTextDelegate: class {
+    func scannerDidDismiss(_ controller: BarcodeScannerViewController, didCaptureText text: [VNRecognizedTextObservation])
+}
+
+
 // MARK: - Controller
 
 /**
@@ -38,6 +45,8 @@ open class BarcodeScannerViewController: UIViewController {
 
   /// Delegate to handle the captured code.
   public weak var codeDelegate: BarcodeScannerCodeDelegate?
+    /// Delegate to handle the captured code.
+  public weak var textDelegate: BarcodeScannerTextDelegate?
   /// Delegate to report errors.
   public weak var errorDelegate: BarcodeScannerErrorDelegate?
   /// Delegate to dismiss barcode scanner when the close button has been pressed.
@@ -336,4 +345,9 @@ extension BarcodeScannerViewController: CameraViewControllerDelegate {
     codeDelegate?.scanner(self, didCaptureCode: code, type: rawType)
     animateFlash(whenProcessing: isOneTimeSearch)
   }
+    func cameraViewControllerDidTakePhoto(_ controller: CameraViewController, text: [VNRecognizedTextObservation]) {
+        controller.dismiss(animated: true, completion: nil)
+        print("reached Barcode delegate 2", text)
+        textDelegate?.scannerDidDismiss(self, didCaptureText: text)
+    }
 }

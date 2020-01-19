@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,14 @@
 		617D327423D3655B00640DA8 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327023D3655B00640DA8 /* UIViewController+Extensions.swift */; };
 		617D327923D3659B00640DA8 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327723D3659B00640DA8 /* Functions.swift */; };
 		617D327A23D3659B00640DA8 /* VideoPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D327823D3659B00640DA8 /* VideoPermissionService.swift */; };
+		617D328523D3AC1200640DA8 /* AgePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D328423D3AC1200640DA8 /* AgePickerViewController.swift */; };
+		617D328723D3AC6F00640DA8 /* GenderPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D328623D3AC6F00640DA8 /* GenderPickerViewController.swift */; };
+		617D328923D3ACC400640DA8 /* PeoplePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D328823D3ACC400640DA8 /* PeoplePickerViewController.swift */; };
+		617D328B23D3ACD900640DA8 /* GreenValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D328A23D3ACD900640DA8 /* GreenValueViewController.swift */; };
+		617D328D23D4012400640DA8 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D328C23D4012300640DA8 /* BarcodeViewController.swift */; };
+		617D329123D40CF500640DA8 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D329023D40CF500640DA8 /* ProductTableViewCell.swift */; };
+		617D329323D40F7000640DA8 /* ReceiptTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D329223D40F7000640DA8 /* ReceiptTableViewController.swift */; };
+		617D329523D4244200640DA8 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D329423D4244200640DA8 /* SignInViewController.swift */; };
 		B7BF30469445946F00F962E4 /* Pods_eco_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +89,14 @@
 		617D327023D3655B00640DA8 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		617D327723D3659B00640DA8 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		617D327823D3659B00640DA8 /* VideoPermissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPermissionService.swift; sourceTree = "<group>"; };
+		617D328423D3AC1200640DA8 /* AgePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgePickerViewController.swift; sourceTree = "<group>"; };
+		617D328623D3AC6F00640DA8 /* GenderPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerViewController.swift; sourceTree = "<group>"; };
+		617D328823D3ACC400640DA8 /* PeoplePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplePickerViewController.swift; sourceTree = "<group>"; };
+		617D328A23D3ACD900640DA8 /* GreenValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenValueViewController.swift; sourceTree = "<group>"; };
+		617D328C23D4012300640DA8 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		617D329023D40CF500640DA8 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		617D329223D40F7000640DA8 /* ReceiptTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewController.swift; sourceTree = "<group>"; };
+		617D329423D4244200640DA8 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		822636DC9B3A0F939015B0DD /* Pods_eco_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B9E0808AC4CFF80227D63E /* Pods_eco_tracker_eco_trackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eco_tracker_eco_trackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9BE8CB74A7791273DDE000 /* Pods-eco-trackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eco-trackerTests.release.xcconfig"; path = "Target Support Files/Pods-eco-trackerTests/Pods-eco-trackerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +249,14 @@
 				617D326023D3653000640DA8 /* CameraViewController.swift */,
 				617D326123D3653000640DA8 /* HeaderViewController.swift */,
 				617D325F23D3653000640DA8 /* MessageViewController.swift */,
+				617D328423D3AC1200640DA8 /* AgePickerViewController.swift */,
+				617D328623D3AC6F00640DA8 /* GenderPickerViewController.swift */,
+				617D328A23D3ACD900640DA8 /* GreenValueViewController.swift */,
+				617D328823D3ACC400640DA8 /* PeoplePickerViewController.swift */,
+				617D328C23D4012300640DA8 /* BarcodeViewController.swift */,
+				617D329023D40CF500640DA8 /* ProductTableViewCell.swift */,
+				617D329223D40F7000640DA8 /* ReceiptTableViewController.swift */,
+				617D329423D4244200640DA8 /* SignInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +282,8 @@
 				617D322223D3297600640DA8 /* Sources */,
 				617D322323D3297600640DA8 /* Frameworks */,
 				617D322423D3297600640DA8 /* Resources */,
+				20BD892061E01E54E21A4001 /* [CP] Embed Pods Frameworks */,
+				DF7A60A563E2B2F8ADE84ADD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +321,8 @@
 				617D324323D3297B00640DA8 /* Sources */,
 				617D324423D3297B00640DA8 /* Frameworks */,
 				617D324523D3297B00640DA8 /* Resources */,
+				D03199B9ECE0F460DD9FA5B2 /* [CP] Embed Pods Frameworks */,
+				C3E2C8AF5AA2A2921E5DB040 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,6 +405,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		20BD892061E01E54E21A4001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2A7C39D99FA210A1CBDD3C24 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,6 +488,57 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3E2C8AF5AA2A2921E5DB040 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D03199B9ECE0F460DD9FA5B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eco-tracker-eco-trackerUITests/Pods-eco-tracker-eco-trackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7A60A563E2B2F8ADE84ADD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eco-tracker/Pods-eco-tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -456,16 +552,24 @@
 				617D326B23D3654600640DA8 /* FocusViewType.swift in Sources */,
 				617D326323D3653000640DA8 /* MessageViewController.swift in Sources */,
 				617D326C23D3654600640DA8 /* TorchMode.swift in Sources */,
+				617D328B23D3ACD900640DA8 /* GreenValueViewController.swift in Sources */,
+				617D328523D3AC1200640DA8 /* AgePickerViewController.swift in Sources */,
 				617D327223D3655B00640DA8 /* AVMetadataObject+Extensions.swift in Sources */,
+				617D329123D40CF500640DA8 /* ProductTableViewCell.swift in Sources */,
 				617D322C23D3297600640DA8 /* SceneDelegate.swift in Sources */,
 				617D327A23D3659B00640DA8 /* VideoPermissionService.swift in Sources */,
 				617D327923D3659B00640DA8 /* Functions.swift in Sources */,
 				617D326523D3653000640DA8 /* HeaderViewController.swift in Sources */,
 				617D326623D3653000640DA8 /* BarcodeScannerViewController.swift in Sources */,
+				617D329323D40F7000640DA8 /* ReceiptTableViewController.swift in Sources */,
 				617D327423D3655B00640DA8 /* UIViewController+Extensions.swift in Sources */,
+				617D328723D3AC6F00640DA8 /* GenderPickerViewController.swift in Sources */,
 				617D327323D3655B00640DA8 /* NSLayoutConstraint+Extensions.swift in Sources */,
+				617D328923D3ACC400640DA8 /* PeoplePickerViewController.swift in Sources */,
+				617D329523D4244200640DA8 /* SignInViewController.swift in Sources */,
 				617D326A23D3654600640DA8 /* State.swift in Sources */,
 				617D327123D3655B00640DA8 /* UIView+Extensions.swift in Sources */,
+				617D328D23D4012400640DA8 /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

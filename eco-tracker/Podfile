@@ -6,6 +6,8 @@ target 'eco-tracker' do
   use_frameworks!
 
   # Pods for eco-tracker
+  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'GoogleSignIn'
 
   target 'eco-trackerTests' do
     inherit! :search_paths

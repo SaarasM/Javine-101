@@ -8,6 +8,7 @@ protocol CameraViewControllerDelegate: class {
   func cameraViewControllerDidFailToSetupCaptureSession(_ controller: CameraViewController)
   func cameraViewController(_ controller: CameraViewController, didReceiveError error: Error)
   func cameraViewControllerDidTapSettingsButton(_ controller: CameraViewController)
+  func cameraViewControllerDidTakePhoto(_ controller: CameraViewController, text: [VNRecognizedTextObservation])
   func cameraViewController(
     _ controller: CameraViewController,
     didOutput metadataObjects: [AVMetadataObject]
@@ -38,6 +39,8 @@ public final class CameraViewController: UIViewController {
   public private(set) lazy var settingsButton: UIButton = self.makeSettingsButton()
   // Button to switch between front and back camera.
   public private(set) lazy var cameraButton: UIButton = self.makeCameraButton()
+    
+  public private(set) lazy var takePhotoButton: UIButton = self.makeTakePhotoButton()
 
   // Constraints for the focus view when it gets smaller in size.
   private var regularFocusViewConstraints = [NSLayoutConstraint]()
@@ -81,6 +84,7 @@ public final class CameraViewController: UIViewController {
    
   // MARK: - Text Detection
   var requests = [VNRequest]()
+  var textResults = [VNRecognizedTextObservation]()
 
   // MARK: - Initialization
 
@@ -102,7 +106,7 @@ public final class CameraViewController: UIViewController {
     }
 
     view.layer.addSublayer(videoPreviewLayer)
-    view.addSubviews(settingsButton, flashButton, focusView, cameraButton)
+    view.addSubviews(settingsButton, flashButton, focusView, cameraButton, takePhotoButton)
 
     torchMode = .off
     focusView.isHidden = true
@@ -173,6 +177,8 @@ public final class CameraViewController: UIViewController {
       return
     }
     
+    self.textResults = observations
+        
     for observation in observations {
         guard let bestCandidate = observation.topCandidates(1).first else {
             print("No candidate")
@@ -183,22 +189,6 @@ public final class CameraViewController: UIViewController {
             print("Found this candidate: \(bestCandidate.string)")
         }
     }
-    
-//    let result = observations.map({$0 as? VNRecognizedTextObservation})
-//
-//    if result.count > 0 {
-//        print(result[0].debugDescription)
-//    }
-//
-//
-//    DispatchQueue.main.async() {
-//        self.view.layer.sublayers?.removeSubrange(1...)
-//           for region in result {
-//               guard let rg = region else {
-//                   continue
-//               }
-//            }
-//       }
     
   }
 
@@ -218,6 +208,11 @@ public final class CameraViewController: UIViewController {
     cameraButton.addTarget(
       self,
       action: #selector(handleCameraButtonTap),
+      for: .touchUpInside
+    )
+    takePhotoButton.addTarget(
+      self,
+      action: #selector(handleTakePhotoButtonTap),
       for: .touchUpInside
     )
 
@@ -248,6 +243,11 @@ public final class CameraViewController: UIViewController {
   /// Sets the next torch mode.
   @objc private func handleFlashButtonTap() {
     torchMode = torchMode.next
+  }
+    
+  @objc private func handleTakePhotoButtonTap() {
+    self.stopCapturing()
+    delegate?.cameraViewControllerDidTakePhoto(self, text: self.textResults)
   }
 
   // MARK: - Camera setup
@@ -399,7 +399,13 @@ private extension CameraViewController {
 
       cameraButton.widthAnchor.constraint(equalToConstant: 48),
       cameraButton.heightAnchor.constraint(equalToConstant: 48),
-      cameraButton.trailingAnchor.constraint(equalTo: flashButton.trailingAnchor)
+      cameraButton.trailingAnchor.constraint(equalTo: flashButton.trailingAnchor),
+        
+      takePhotoButton.widthAnchor.constraint(equalToConstant: 48),
+      takePhotoButton.heightAnchor.constraint(equalToConstant: 48),
+      takePhotoButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      takePhotoButton.bottomAnchor.constraint(equalTo: view.centerYAnchor, constant: 230)
+        
     )
 
     setupFocusViewConstraints()
@@ -485,6 +491,13 @@ private extension CameraViewController {
     button.isHidden = !showsCameraButton
     return button
   }
+    
+    func makeTakePhotoButton() -> UIButton {
+        let button = UIButton(type: .custom)
+        button.setImage(imageNamed("cameraRotate"), for: UIControl.State())
+        button.isHidden = false
+        return button
+    }
 }
 
 // MARK: - AVCaptureMetadataOutputObjectsDelegate

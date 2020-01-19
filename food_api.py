@@ -80,3 +80,5 @@ def GetScore(product):
     primary = bio_lcs.LCS_all(ingredients_name_arr, primary_ingredient)
     secondary = bio_lcs.LCS_all(ingredients_name_arr, secondary_ingredient)
     tertiary = bio_lcs.LCS_all(ingredients_name_arr, tertiary_ingredient)
+
+    ingredients_arr[ingredients_name_arr.index(primary)

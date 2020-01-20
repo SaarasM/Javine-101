@@ -49,7 +49,7 @@ class BarcodeViewController: UIViewController {
                 }
                 self.score = Double(product_carbon)!
                 self.productNameLabel.text = product_name
-                self.carbonLabel.text = product_carbon
+                self.carbonLabel.text = "Carbon Footprint: " + product_carbon
                 
             case .failure(let error):
                 print("error--->",error)
